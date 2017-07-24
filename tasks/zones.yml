@@ -1,7 +1,7 @@
 ---
 - name: zones | Managing Firewall Zones
   firewalld:
-    immediate: "{{ firewalld_enable_immediately }}"
+    immediate: "{{ item['immediate']|default(omit) }}"
     interface: "{{ item['interface']|default(omit) }}"
     permanent: "{{ item['permanent']|default(false) }}"
     source: "{{ item['source']|default(omit) }}"
