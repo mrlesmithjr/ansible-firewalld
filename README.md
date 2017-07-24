@@ -1,6 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [ansible-firewalld](#ansible-firewalld)
   - [Requirements](#requirements)
@@ -41,9 +41,6 @@ firewalld_custom_zones: []
   # - zone: 'privateDNS'
   #   state: 'enabled'
   #   present: true
-
-# Defines whether globally any rules/zones are applied immediately
-firewalld_enable_immediately: false
 
 # Defines firewall rules
 firewalld_rules: []

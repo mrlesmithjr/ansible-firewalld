@@ -1,12 +1,12 @@
 ---
 - name: rules | Managing Firewall Rules
   firewalld:
-    immediate: "{{ firewalld_enable_immediately }}"
+    immediate: "{{ item['immediate']|default(omit) }}"
     interface: "{{ item['interface']|default(omit) }}"
     masquerade: "{{ item['masquerade']|default(omit) }}"
     permanent: "{{ item['permanent']|default(omit) }}"
     port: "{{ item['port']|default(omit) }}"
-    service: "{{ item['service'] }}"
+    service: "{{ item['service']|default (omit) }}"
     source: "{{ item['source']|default(omit) }}"
     state: "{{ item['state']|default(omit) }}"
     zone: "{{ item['zone']|default(omit) }}"

@@ -17,9 +17,6 @@ firewalld_custom_zones: []
   #   state: 'enabled'
   #   present: true
 
-# Defines whether globally any rules/zones are applied immediately
-firewalld_enable_immediately: false
-
 # Defines firewall rules
 firewalld_rules: []
   # # - service: 'dhcp'
