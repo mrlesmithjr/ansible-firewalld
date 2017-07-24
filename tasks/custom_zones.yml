@@ -4,6 +4,7 @@
   become: true
   changed_when: false
   register: "_firewalld_get_zones"
+  check_mode: no
 
 - name: zones | Deleting Custom Firewall Zones
   command: "firewall-cmd --permanent --delete-zone={{ item['zone'] }}"
